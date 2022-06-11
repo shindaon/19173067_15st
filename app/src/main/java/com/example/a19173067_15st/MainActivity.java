@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MovieAdapter();
         recyclerView.setAdapter(adapter);
 
+
     }
 
     public void makeRequest() {
