@@ -48,6 +48,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         TextView peopleCount;
         TextView movieRank;
         TextView AllCount;
+        TextView oldAndNew;
 
         public ViewHolder(View itemView){
             super(itemView);
@@ -55,12 +56,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             peopleCount = itemView.findViewById(R.id.peopleCount);
             movieRank = itemView.findViewById(R.id.movieRank);
             AllCount = itemView.findViewById(R.id.AllCount);
+            oldAndNew = itemView.findViewById(R.id.oldAndNew);
         }
         public void setItem(Movie item){
             movieName.setText(item.movieNm);
             peopleCount.setText(item.audiCnt + " 명");
             movieRank.setText(item.rank + " 위");
             AllCount.setText("누적관객수 : " + item.audiAcc + " 명");
+            oldAndNew.setText(item.rankOldAndNew);
 
         }
     }

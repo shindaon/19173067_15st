@@ -19,4 +19,5 @@ public class Movie {
     String audiAcc;
     String scrnCnt;
     String showCnt;
+
 }

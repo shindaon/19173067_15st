@@ -29,7 +29,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="138dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -50,7 +50,7 @@
                     android:layout_marginTop="10dp"
                     android:text="관객수"
                     android:textColor="#FF0000FF"
-                    android:textSize="16sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/movieRank"
@@ -60,17 +60,27 @@
                     android:layout_marginTop="10dp"
                     android:text="순위"
                     android:textColor="#FFFF0000"
-                    android:textSize="17sp" />
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/oldAndNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="신규진입여부"
+                    android:textColor="#FF008000"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/AllCount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_marginTop="10dp"
+                    android:gravity="center"
                     android:text="누적관객수"
                     android:textColor="#FF000000"
-                    android:textSize="18sp" />
+                    android:textSize="15sp" />
 
             </LinearLayout>
         </LinearLayout>
